@@ -4,7 +4,23 @@
 
 import styles from "./Panchang.module.css"; // Import CSS module for styling
 
-const data = {
+interface Panchang {
+  date: string; // Date of the Panchang in YYYY-MM-DD format
+  day: string; // Day of the week
+  tithi: string; // Tithi details
+  nakshatra: string; // Nakshatra details
+  yoga: string; // Yoga details
+  karan: string; // Karan details
+  sunrise: string; // Sunrise time
+  sunset: string; // Sunset time
+  abhijitMuhurta: string; // Abhijit Muhurta timing
+  amritKalam: string; // Amrit Kalam timing
+  rahukalam: string; // Rahukalam timing
+  yamganda: string; // Yamganda timing
+  gulikaal: string; // Gulikaal timing
+}
+
+const data: Panchang = {
   date: "2024-10-10",
   day: "Thursday",
   tithi: "चतुर्थी (रात 12:47 बजे तक), फिर पंचमी",
@@ -14,11 +30,11 @@ const data = {
   sunrise: "प्रातः 6:12 बजे",
   sunset: "सायं 5:55 बजे",
   abhijitMuhurta: "दोपहर 11:40 बजे से 12:27 बजे तक",
+  amritKalam: "दोपहर 4:47 बजे से शाम 6:34 बजे तक",
   rahukalam: "दोपहर 1:32 बजे से 3:00 बजे तक",
   yamganda: "प्रातः 6:12 बजे से 7:40 बजे तक",
   gulikaal: "प्रातः 9:07 बजे से 10:35 बजे तक",
 };
-
 const Home = () => {
   const panchangData = data;
 
