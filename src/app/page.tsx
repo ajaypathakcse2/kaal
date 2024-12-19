@@ -36,6 +36,8 @@ const data: Panchang = {
   gulikaal: "सुबह 9:41 बजे से 10:53 बजे तक",
 };
 
+//This data is for today
+
 const Home = () => {
   const panchangData = data;
 
